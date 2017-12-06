@@ -1,0 +1,195 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+li,
+form,
+footer,
+header,
+menu,
+nav{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+
+ul li{
+    list-style : none;
+    text-decoration : none: 
+}
+
+ul li a{
+	text-decoration: none;
+}
+.container {
+    width: 960px;
+    margin: auto;
+}
+.headerWrap {
+    padding-top: 10px;
+}
+.headerWrap .pullRight .pullLeft{
+	padding-left: 45px;
+}
+.headerWrap .pullRight a{
+	font-size: 20px;
+}
+.navBar li a {
+    font-size: 16px;
+}
+.clearFix {
+    clear: both;
+    float: none;
+    width: 0;
+    height: 0;
+}
+.pullLeft {
+    float: left;
+}
+.pullRight {
+    float: right;
+}
+.titleBar {
+    background-color: #333333;
+    padding: 35px 10px 30px 10px;
+}
+.titleBar h2 {
+    margin: 0;
+}
+.titleText {
+    float: left;
+    color: #aaaaaa;
+}
+.titleText h2 {
+    font-size: 30px;
+}
+.searchBox {
+    float: right;
+}
+.searchBox input {
+    width: 218px;
+    height: 35px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+    background-image: url('D:/htmlAssignmentVersion1.1/images/searchIcon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+.postWrapper {
+    float: left;
+    width: 710px;
+    border-right: 1px solid #eeeeee;
+}
+.postWrapperContent {
+    padding: 40px 10px 30px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.postWrapperImage {
+    float: left;
+    width: 210px;
+    height: 210px;
+}
+.postWrapperDescription {
+    float: right;
+    width: 445px;
+}
+.postWrapperDescription h4 {
+    color: #3352de;
+    font-size: 22px;
+}
+.authorName {
+    padding: 15px 0 20px 0;
+}
+.socialLogo {
+    padding-top: 20px;
+}
+.messengerLogo {
+    float: left;
+}
+.socialWebsiteLogo li {
+	float:right;
+    padding-left: 5px;
+}
+.newsFeed {
+    float: right;
+    width: 240px;
+    padding-top: 40px;
+    padding-left: 5px;
+}
+.countryNavbar li {
+    float: left;
+    padding-left: 25px;
+    font-size: 16px;
+}
+.postMap {
+    margin-top: 30px;
+    padding: 20px 5px 25px 5px;
+    border: 1px solid #eeeeee;
+}
+.mapWrap {
+    padding-top: 30px;
+}
+.mapWrap img {
+    width: 205px;
+    height: 135px;
+}
+.postNews {
+    margin-top: 20px;
+}
+.newsHeading {
+    padding: 10px 0 10px 10px;
+    background-color: #eeeeee;
+}
+.postNews li {
+    stroke: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+    color: #eeeeee;
+}
+.archiveNews li {
+    text-decoration: none;
+    stroke: none;
+    padding: 10px 0;
+    color: #eeeeee;
+}
+.footer {
+	margin-top: 140px;
+    background-color: #252629;
+    padding: 30px 0 55px 0;
+}
+.leftFooter li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 0 15px 0;
+}
+.leftFooter .pullLeft{
+	padding-right: 45px;
+}
+.leftFooter h3{
+	padding-bottom: 25px;
+}
+.footerNavbar li {
+    padding-left: 20px;
+}
+.socialIcons{
+	padding: 20px 0  0 215px;
+}
+.socialIcons li{
+	padding-right: 10px;
+}
+.companyTag{
+	padding-bottom: 15px;
+}

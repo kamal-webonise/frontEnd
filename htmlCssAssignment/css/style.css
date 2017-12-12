@@ -88,17 +88,19 @@ body {
 .header {
     margin-bottom: 60px;
 }
-.logo {
-    width: 180px;
-    height: 45px;
+.logo{
     margin: 20px 16px 25px 19px;
+}
+.logo a img{
+    height:43px; 
+    width:180px;
 }
 .headerBar {
     width: 954px;
     border-left: 1px solid #e5e5e5;
 }
 .headerTop {
-    padding: 10.6px 0 10px 20px;
+    padding: 10px 0 10px 20px;
     border-bottom: 1px solid #e5e5e5;
 }
 .headerTop li {
@@ -113,6 +115,9 @@ body {
 }
 .headerTop li.clearFix {
     float: none;
+}
+.headerTop li a:hover {
+    color: #0099cc;
 }
 .headerBottom {
     font-size: 16px;
@@ -152,6 +157,9 @@ body {
     padding: 0 0 10px 10px;
     line-height: 16px;
 }
+.leftWrap li a:hover {
+    color: #222222;
+}
 .centerWrap {
     width: 630px;
     padding-left: 30px;
@@ -162,12 +170,14 @@ body {
     padding: 25px 0 30px 0;
 }
 .contentNavbar li {
-    float: left;
-    
+    float: left;  
 }
 .contentNavbar li a {
     font-size: 12px;
     color: #1199cc;
+}
+.contentNavbar li a:hover {
+    color: #222222;
 }
 .contentNavbar li img{
     padding : 0 10px;
@@ -203,11 +213,17 @@ body {
     padding-bottom: 17px;
     color: #0099cc;
 }
+.newsFeed li a:hover {
+    color: #222222;
+}
 .newsFeed .date a {
     padding-bottom: 30px;
     line-height: 100%;
     font-size: 12px;
     color: #000000;
+}
+.newsFeed .date a:hover{
+    color:#00ffcc;
 }
 .centerBottomNavbar li {
     padding: 0 0 15px 0;
@@ -215,13 +231,16 @@ body {
     padding-right: 30px;
     border-bottom: 1px solid #e5e5e5;
 }
-.centerBottomNavbar li a {
+.centerBottomNavbar li a{
     font-size: 14px;
     color: #1199cc;
     font-weight: 600;
 }
+.centerBottomNavbar li a:hover{
+    color:#000000;
+}
 .centerBottomNavbar li.active{
-border-bottom: 2px solid #0099cc;
+    border-bottom: 2px solid #0099cc;
 }
 .centerBottomNavbar li.active a{
     color: #222222;
@@ -315,7 +334,7 @@ border-bottom: 2px solid #0099cc;
 .rightWrap p a {
     color: 0099cc;
 }
-.rightBottomContainer {} .founderList li {
+.founderList li {
     padding-bottom: 20px;
 }
 .founderImage {
@@ -401,6 +420,9 @@ border-bottom: 2px solid #0099cc;
     padding: 0 8px;
     color: #ffffff;
 }
+.topFooterNavbar li a:hover {
+    color: #0099cc;
+}
 .topFooterNavbar li {
     border-right: 1px solid #e5e5e5;
     display: inline-block;
@@ -422,6 +444,9 @@ border-bottom: 2px solid #0099cc;
     font-size: 14px;
     padding: 0 8px;
     color: #acadaf;
+}
+.bottomFooterNavbar li a:hover {
+    color: #0099cc;
 }
 .rightFooter {
     padding-left: 20px;

@@ -1,0 +1,529 @@
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, menu, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 12px;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    display:inline-block;
+    cursor:pointer;	
+}
+
+.clearFix{
+	clear: both;
+	width: 0;
+	height: 0;
+}
+
+.topHeaderBar{
+    background-color:#19232d;
+}
+.container{
+    width:1170px;
+    margin : 0 auto;
+}
+.topNavbar{
+    float:right;
+}
+.topNavbar li{
+    float:left;
+    padding:0 11px;
+}
+.topNavbar li a{
+    color: #ffffff;
+    font-size:12px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.topNavbar li a:hover{
+    color:#00ffcc;
+    background-color:#01a451;
+}
+.topNavbar li.clearFix{
+    float:none;
+    padding: 0;
+}
+
+.bottomHeaderBar{
+    width:1170px;
+    margin : 0 auto;
+    position: relative;
+}
+.placeLogo{
+    position:absolute;
+    top:-36px;
+    left:0;
+    width: 192px;
+    height: 126px;  
+    background: url(../images/logo.png) no-repeat;
+    z-index: 2;
+    cursor: pointer;
+}
+.placeLogo a{
+    height: 100%;
+    display: block;    
+}
+.placeLogo a img{
+    max-width: 100%;
+    max-width: 100%;
+    display:block;
+}
+
+.bottomNavbar
+{
+    float:right;
+}
+.bottomNavbar li
+{
+    float:left;
+    padding:0 15px;
+    border-left:1px solid #dbdbdb;
+}
+.bottomNavbar li a{
+    color:#19232d;
+    font-size:16px;
+    font-weight: 600;
+    line-height: 72px;
+}
+.bottomNavbar li.active a{
+    color:#cd091d;
+}
+.bottomNavbar li a:hover{
+    color:#cd091d;
+}
+.bottomNavbar li.clearFix{
+    float:none;
+    padding: 0px;
+}
+
+.banner{
+    position: relative;
+    margin-bottom: 42px;
+}
+.banner .backgroundImage a{
+    width: 100%;
+}
+.banner .backgroundImage img{
+    width: 100%;
+}
+.imageOnHover{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0.5;
+    background:#000000;
+    display:none;
+    z-index: 1;
+}
+
+/*.centerText{
+    width:1170px;
+    height: 266px;
+    position: relative;
+    margin: 0 auto;
+    display:none;
+}*/
+.imageText{
+    width:550px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    color:#ffffff;
+    display:none;
+    margin-left: -275px;
+    z-index: 1;
+}
+.imageText h3{
+    font-size: 37px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.imageText h5{
+    font-size: 30px;
+    text-align: center;
+}
+.banner:hover .imageOnHover , .banner:hover .imageText{
+    display:block;
+}
+
+/* left Footer */
+
+.leftWrapper{
+    float:left;
+    width:298px;
+    border: 1px solid #dddddd;
+    background-color:#f8f8f8;
+    margin-right:20px;
+}
+.mobileView{  
+    border-bottom: 1px solid #dddddd;
+    padding:20px 0 20px 18px;
+
+}
+.sideArrow{
+    background: url("../images/sprite.png") no-repeat;
+    height: 13px;
+    width: 13px;
+    background-position: -3px 0;
+    float:left;
+    padding-right:10px;
+    display:none;
+}
+.filter{
+    float:left;
+    font-weight: 700;
+    
+}
+.filter a{
+    font-size: 21px;
+    color:#cd091d;
+}
+.reset{
+    float:right;
+    display:none;
+    padding-right: 15px;
+}
+.checkBox{
+    padding: 20px 0 20px 18px;
+}
+.checkBar{
+    display: block;
+}
+.checkBar h5{
+    font-size: 15px;
+    color:#19232d;
+    font-weight: 700;
+    padding: 20px 0 0 18px; 
+}
+.checkBar li{
+    padding-bottom:15px;
+}
+.checkBar li a{
+    font-size: 12px;
+    color:#666666;
+    padding-left:5px;
+}
+.rightWrapper{
+    padding-top:20px;
+    float:right;
+    width:850px;
+}
+.rightWrapper h2{
+    font-size: 24px;
+    font-weight: 700;
+    color:#cd091d;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.leftContainer{
+    float:left;
+
+}
+.leftContainer li{
+    height :158px;
+    width: 848px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+}
+.leftContainer li.clearFix{
+    float:none;
+    border:none;
+    width: 0px;
+    height: 0px;
+}
+.imageHolder{
+    float:left;
+    width: 238px;
+}
+.imageHolder a{
+    width:100%;
+    display:block;		
+}
+.imageHolder img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.description{
+    width:590px;
+    float:left;
+    margin:20px 0 0 20px;
+}
+.description h2{
+    font-size: 21px;
+    font-weight: 600;
+    color:#000000;
+    padding-bottom: 15px;   
+}
+.innerDescription{
+    float:left;
+    width:590px;
+    margin:0 0 17px 20px;
+}
+
+.compLogo{
+    float:left;
+    padding-right: 8px;
+}
+.info h5{
+    float:left;
+    font-size: 16px;
+    color:#000000;
+    padding-bottom: 20px;
+}
+.rightBottom span{
+    float:left;
+    line-height: 32px;
+}
+.showCost{
+    background-color: #19232d;
+    color:#ffffff;
+    width:60px;
+    text-align:center;
+}
+.numbers{
+    background-color:#36414a;
+    color:#ffffff;
+    width: 550px;
+    text-align: center;
+}
+.download{  	
+    background: url("../images/sprites.png") no-repeat center;
+    height: 22px;
+    background-position: 0 -12px;	
+    padding:10px 0 0 0;
+    display:none;
+    background-color: #19232d;
+    width:20%;	
+}
+
+.rightBottom{
+    float:left;
+}
+.rightBottom span.clearFix{
+    float:none;
+}
+
+
+.footer{
+    background-color: #000000;
+
+}
+.footer h4{
+    padding:12px 0;
+    text-align: center;
+    color: #3f5061;
+    font-size: 12px;
+}
+
+
+@media only screen 
+and (max-device-width: 1199px)
+{
+    .container{
+        width:970px;
+    }
+    .bottomHeaderBar{
+        width:970px;
+    }
+    .leftWrapper{
+        width:248px;
+    }
+    .rightWrapper{
+        width: 700px;
+    }
+    .leftContainer li{
+        width: 698px;
+    }
+    .checkBar{
+        display:none;
+    }
+    .description{
+        width: 440px;
+    }
+    .innerDescription{
+        width: 440px;
+    }
+    .numbers{
+        width: 400px;
+    }
+}
+
+@media only screen 
+and (max-device-width: 991px)
+{
+    .container{
+        width:750px;
+    }
+    .bottomHeaderBar{
+        width:750px;
+    }
+    .bottomNavbar li{
+        padding: 0 5px;
+    }
+    .bottomNavbar li a{
+        font-size:14px;
+    }
+    .checkBar{
+        display:block;
+    }
+    .leftWrapper{
+        width:198px;
+        margin-right: 20px;
+    }
+    .rightWrapper{
+        width: 530px;
+    }
+    .leftContainer li{
+        width: 528px;
+    }
+    .description{
+        width: 270px;
+    }
+    .innerDescription{
+        width: 270px;
+    }
+    .numbers{
+        width: 230px;
+    }
+}
+
+@media only screen 
+and (max-device-width: 767px)
+{
+    .container{
+        width:100%;
+    }
+    .bottomHeaderBar{
+        width:100%;
+    }
+    .bottomNavbar{
+        float:none;
+        height: 72px;
+    }
+    .bottomNavbar li{
+        display: none;
+    }
+    .sideArrow{
+        display:block;
+    }
+    .rightWrapper{
+        width: 100%;
+        float:none;
+    }
+    
+    .reset{
+        display:block;
+    }
+    .checkBar{
+        display:none;
+    }
+    .mobileView{
+        border-top: 1px solid #dddddd;
+    }
+    .leftWrapper{
+        border:none;
+        float:none;
+        width:100%;
+    }
+    .leftContainer{
+        float:none;
+    }
+    .leftContainer li{
+	width:100%;
+	height:100%;
+	border-left:none;
+	border-right:none;
+    }		
+    .imageHolder {
+	width:100px;
+	margin:20px 0 0 10px ;
+    }
+    .description{
+	width:60%;
+	margin: 20px 0 0 10px ;
+    }
+    .info{
+	margin-top:10px;
+	padding-left:30%;
+    }	
+    .innerDescription{
+	margin-left:0px;
+	text-align:center;
+        width:100%;
+    }	
+    .rightBottom{
+	width:100%;
+    }
+    .showCost{
+	width:20%;
+    }
+    .numbers{
+	width:60%;
+    }
+    .download{
+	display:block;
+    }	
+    .description h2{
+	font-size:16px;	
+	line-height:18px;
+    }
+    .imageText{
+	width:100%;
+        margin-top:-6%;
+	margin-left:-50%;
+    }
+    .imageText h3{
+	font-size:12px;
+	padding:0;
+    }
+   .imageText h5{
+	font-size:12px;
+}		
+}

@@ -1,0 +1,245 @@
+.body {
+    font-family: 'Lato', sans-serif;
+}
+.headerBackgroundColor {
+    background-color: #5d466e;
+    font-family: 'Raleway', sans-serif;
+}
+.headerWrapper {
+    padding: 24px 0 25px 0;
+    position: relative;
+}
+.connectCenter {
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+}
+.headerWrapper span {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 100%;
+    margin: 0;
+    color: #ffffff;
+    padding-right: 20px;
+}
+.btn {
+    font-size: 13px;
+    font-weight: 600;
+}
+.btn-default {
+    color: #ffffff;
+    background-color: #5d466e;
+    border: 1px solid #ffffff;
+    padding: 5px 9px;
+}
+.close {
+    color: #ffffff;
+}
+.close span {
+    font-size: 30px;
+}
+.centerHeader .logoWrapper {
+    padding: 13px 0 14px 0;
+}
+.editDefault {
+    background-color: #ffffff;
+    border: none;
+    margin: 0;
+    position: static;
+}
+.editDefault .navbar-nav li:hover {
+    background-color: #5d466e;
+}
+.nav > li > a > img {
+    display: block;
+}
+.editDefault .navbar-nav > li {
+    padding: 0 15px;
+}
+.editDefault .navbar-nav > li > a {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    line-height: 80px;
+    padding: 0;
+}
+.editDefault .navbar-nav > li:last-child {
+    padding-right: 0px;
+}
+.editDefault .navbar-nav > .open > a:first-child:hover {
+    background-color: #5d466e;
+    color: #ffffff;
+}
+.editDefault .navbar-nav > .open > a:hover {
+    background-color: #673091;
+    color: #ffffff;
+}
+.editDefault .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background-color: #5d466e;
+    color: #ffffff;
+}
+.outer {
+    position: relative;
+}
+.removePosition li {
+    position: static;
+}
+.removePosition > li > a {
+    position: static;
+}
+.changeDropdown {
+    width: 100%;
+    background-color: #5d466e;
+    padding: 40px;
+    /*min-width: 1000px;*/
+}
+.changeDropdown > li > ul {
+    list-style: none;
+    padding-right: 55px;
+}
+.changeDropdown > li:first-child {
+    padding-left: 240px;
+}
+.changeDropdown > li > ul > li > a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+.headerImage {
+    position: relative;
+}
+.headerImage img {
+    width: 100%;
+    height: 376px;
+}
+.headerImage p {
+    font-size: 45px;
+    font-weight: 700;
+    color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-left: -345px;
+}
+.bottomHeader {
+    background-color: #5d466e;
+}
+.search {
+    text-align: center;
+    margin-bottom: 65px;
+}
+.bottomHeader h3 {
+    display: inline-block;
+    padding-right: 45px;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+    line-height: 110px;
+}
+.bottomHeader form {
+    display: inline-block;
+    padding: 30px 0;
+}
+.bottomHeader input[type=text] {
+    width: 470px;
+    height: 50px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/searchIcons.jpg');
+    background-position: 430px 14px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.centerWrapper {
+    margin-bottom: 150px;
+}
+.centerWrapper h3 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #353553;
+    padding-bottom: 60px;
+    text-align: center;
+    margin: 0;
+}
+.centerWrapper img {
+    width: 100%;
+    position: relative;
+}
+.centerWrapper h4 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 350px;
+    margin-left: -175px;
+}
+.centerWrapper > ul >li {
+    padding-bottom: 30px;
+    list-style: none;
+}
+.footerLeft {
+    background-color: #ffffff;
+    border: none;
+}
+.footerLeft .navbar-nav li a:hover {
+    background-color: #5d466e;
+    color: #ffffff;
+}
+.footerLeft .navbar-nav > li > a {
+    color: #000000;
+    font-size: 16px;
+    padding: 0 0 0 55px;
+    line-height: 34px;
+}
+.footer p {
+    font-size: 16px;
+    color: #000000;
+    padding: 0 80px;
+    line-height: 34px;
+}
+.socialIcons {
+    color: #ffffff;
+    border: none;
+}
+.socialIcons .navbar-nav>li>a {
+    padding: 0;
+    margin: 0;
+    color: #000000;
+}
+.socialIcons .navbar-nav>li>a:hover {
+    background-color: #5d466e;
+    color: #ffffff;
+}
+.socialIcons li {
+    padding: 0 15px 0 0;
+}
+.socialIcons li a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+}
+.socialIcons li a:first-child {
+    line-height: 34px;
+}
+.socialIcons li.facebookIcons a {
+    height: 34px;
+    width: 34px;
+    background: url("../images/sprite.png") no-repeat;
+    background-position: -10px -10px;
+}

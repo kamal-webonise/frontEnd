@@ -15,6 +15,10 @@
     text-align:center;
     display: inline-block;
 }
+.pullLeft{
+    float:left;
+}
+
 .headerWrapper span {
     font-weight: 600;
     font-size: 17px;
@@ -40,9 +44,43 @@
 .close span {
     font-size: 30px;
 }
-.centerHeader .logoWrapper {
-    padding: 13px 0 14px 0;
+
+
+
+.changeNavbarProperty{
+    background-color: #ffffff;
+    border:none;
+    margin:0;
 }
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+    margin: 0;
+}
+/*.navbar-default .navbar-toggle{
+    border:none;
+}*/
+.navbar-brand{
+    height: 80px;
+}
+.myToggle{
+    border:none;
+    padding:0;
+    border-radius: 0;
+    margin-top: 16px;
+}
+.navHeader a{
+    display: inline-block;
+}
+.logoWrapper{
+    margin:0;
+    padding:0 0 0 15px;
+}
+.logoWrapper img{
+    margin: 10px 0 10px 0;
+    height: 60px;
+    display:block;
+}
+
+
 .editDefault {
     background-color: #ffffff;
     border: none;
@@ -66,7 +104,9 @@
     color: #000000;
     line-height: 80px;
     padding:0 15px;
+    font-weight: bold;
 }
+
 .editDefault .navbar-nav > li:last-child {
     padding-right: 0px;
 }
@@ -111,8 +151,11 @@
     font-size: 18px;
     text-decoration: none;
 }
-.editDefault .navbar-nav li a:hover{
-    color:#000000;
+.caret{
+    margin-left:5px;
+    border-top: 6px dashed;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
 }
 .headerImage {
     position:relative;    
@@ -135,9 +178,7 @@
     font-weight: 700;
     color: #ffffff;
 }
-.headerText a:hover{
-    color:#000000;
-}
+
 .bottomHeader {
     background-color: #5d466e;
 }
@@ -180,14 +221,11 @@
     width: 470px;
     height: 50px;
     display: inline-block;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
     font-size: 16px;
     background-color: white;
     background-position: 430px 14px;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 12px 20px 12px 15px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     /*background-image: url(../images/searchIcons.jpg);*/
@@ -221,7 +259,7 @@
     max-width: 100%;
     max-height: 100%;
     margin:0 auto;
-    display:block;	
+    display:block;  
 }
 .imageTextHolder p {
     font-weight: 700;
@@ -242,7 +280,7 @@
 }
 
 ul{
-	list-style:none;
+    list-style:none;
 }
 .leftBar li{
     padding-top: 8px;
@@ -251,16 +289,12 @@ ul{
 .leftBar li a{
     color:#000000;
 }
-.leftBar li a:hover{
-    background-color: #673091;
-    color:#ffffff;
-}
+
 .footer p{
-    font-size: 16px;
     padding: 8px 0 0 60px;
 }
-.footer span{
-    
+.footer span, .footer p{  
+
     padding-top:8px;
     font-size:16px;
 }
@@ -275,14 +309,14 @@ ul{
 }
 .footerLeftBar li{
     float:left;
-    margin-right: 50px;    
+    margin-right: 30px;    
 }
 .footerLeftBar li.clearFix{
     float:none;
     padding: 0;
 }
 .footerLeftBar ul li:first-child{
-	margin-left:30px;
+    margin-left:30px;
 }
 
 .footerRightBar{
@@ -290,10 +324,13 @@ ul{
 }
 .footerRightBar p{
     float:left;
-    padding: 8px 15px 8px 60px;
+    padding: 8px 15px 8px 0;
     font-size: 16px;
     color:#000000;
     margin:0;
+}
+.leftBar {
+    padding: 0;
 }
 .socialIcons{
     float:left;
@@ -314,10 +351,7 @@ ul{
     width: 34px;
     display: block;
 }
-.socialIcons li a:hover{
-    background-color: #673091;
-    color:#ffffff;
-}
+
 .socialIcons li.facebookIcon a{
     background-position: -10px -10px; 
 }
@@ -334,7 +368,36 @@ ul{
 .footer > p , .footer > span {
     float:left;
 }
-
+.footer{
+    padding-bottom: 20px;
+}
+.footerLeftBar{
+    padding-left:25px;
+}
+.footerRightBar{
+    margin-right:30px;
+}
+.removePosition li:first-child{
+        display: none;
+}
+@media only screen 
+and (max-device-width: 1199px)
+{
+    .footer p{
+        padding:0;
+        padding-top: 8px;
+        padding-right: 0;
+    }
+    .footerRightBar p{
+        padding-right: 15px;
+    }
+    .footerLeftBar{
+    padding-left:0;
+    }
+    .footerRightBar{
+    margin-right:0;
+    }
+}
 
 /*for ipad view*/
 
@@ -407,14 +470,18 @@ and (max-device-width: 767px){
         display: block;
         margin-top:5px;
     } 
-    .editDefault{
-        display:none;
-    }
-    .headerWrapper span{
-        font-size:11px;
 
+    .logoWrapper{
+        height:25px;
+        padding: 0;
     }
-    .centerHeader img{
+    .navHeader a{
+        height: 25px;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .logoWrapper img{
         height: 25px;
     }
     .headerImage img{
@@ -442,6 +509,7 @@ and (max-device-width: 767px){
     .centerWrapper > ul{
         display : table;
         margin : 0 auto;
+        padding: 0;
     }
     .centerWrapper > ul > li{
         height: 230px;
@@ -468,4 +536,52 @@ and (max-device-width: 767px){
         padding: 0 ;
         margin: 0;
     }
+    .removePosition{
+        background-color: #5d466e;
+    }
+    .changeDropdown > li{
+        float:none;
+    }
+    .pullLeft{
+        float:none;
+    }
+    .changeDropdown > li{
+        padding-left: 15px;
+    }
+    .changeDropdown > li > ul >li{
+        margin-bottom:8px;
+    }
+    .editDefault .navbar-nav > li > a 
+    {
+        color:#ffffff;
+    }
+    .removePosition > li:first-child{
+        display: block;
+        text-decoration: underline;
+    }
+    .changeDropdown{
+        padding:20px 40px;
+    }
+    .editDefault .navbar-nav > li > a {
+        line-height: 100%;
+        margin:20px 0;
+    }
+    .removePosition li:last-child{
+        display:none;
+    }
+    form{
+        position: relative;
+    }
+    .searchBox a{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 56px;
+    margin-top: -5px;
+    }
+    .searchBox img{
+        
+        display:block;
+    }
+
 }

@@ -1,0 +1,37 @@
+
+body {
+  font-family: "Gudea";
+  font-size: 16px;
+  line-height: 18px;
+  color: #525252;
+  font-family: 'Lato', sans-serif;
+}
+
+.accordion {
+	background:#f7f7f7;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+	width:100%;
+	padding:15px;
+	display:inline-block;
+	border-bottom:1px solid #1a1a1a;
+	background:#333;
+	font-size:18px;
+	color:#fff;
+	font-weight:700;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+	background:#4c4c4c;
+	text-decoration:none;
+}
+
+
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	padding:15px;
+	display:none;
+}

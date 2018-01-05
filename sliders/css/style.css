@@ -1,0 +1,43 @@
+body {
+  font-family: "Gudea";
+  font-size: 16px;
+  line-height: 18px;
+  color: #525252;
+  font-family: 'Lato', sans-serif;
+}
+
+/*.accordion-section-content{
+    width:232px;
+    height: 232px;
+}*/
+
+.accordion-section-content img {  
+            padding: 15px;  
+            border:  1px solid #ccc;  
+            background-color: #eee;   
+            max-width: 100%; 
+            width: 200px;
+            height: 200px;
+            top:  0; 
+            left: 0 
+        }
+
+        .accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#333;
+    font-size:18px;
+    color:#ffffff;
+    font-weight: 700;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#4c4c4c;
+    text-decoration:none;
+}
+
+.open {
+    display: block;
+}

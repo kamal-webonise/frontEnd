@@ -5,16 +5,18 @@ body {
   line-height: 18px;
   color: #525252;
   font-family: 'Lato', sans-serif;
+  margin:0;
 }
 
 .accordion {
 	background:#f7f7f7;
+	width: 100%;
 }
 
 /*----- Section Titles -----*/
 .accordion-section-title {
 	width:100%;
-	padding:15px;
+	padding:15px 0;
 	display:inline-block;
 	border-bottom:1px solid #1a1a1a;
 	background:#333;
